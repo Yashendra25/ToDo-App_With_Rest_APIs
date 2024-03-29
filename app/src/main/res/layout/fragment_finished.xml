@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FinishedFragment">
+    <TextView
+        android:id="@+id/finsihedTaskHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finished Tasks"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/finsihedTaskHeader"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_tv"
+        android:text="Empty ToDo List!!"
+        android:textSize="30sp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="#D50000"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+
+
+
+
+</RelativeLayout>

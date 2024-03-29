@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/recyclerview"
+         android:layout_marginTop="5dp"
+         android:layout_alignParentTop="true"
+       tools:listitem="@layout/todo_list_item"
+       />
+   <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:layout_centerInParent="true"
+       android:padding="5dp"
+       android:layout_margin="5dp"
+       android:visibility="visible"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_tv"
+        android:text="Empty ToDo List!!"
+        android:textSize="30sp"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:textColor="#D50000"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp"
+        android:id="@+id/addtask_btn"
+        android:contentDescription="TODO"
+        app:tint="@color/white"
+
+        />
+
+</RelativeLayout>
